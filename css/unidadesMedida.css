@@ -43,7 +43,15 @@ body{
     font-size: 20px;
 }
 
+.cajaRem{
+    background: #6c20b8;
+    width: 5rem;
+    height: 3rem;
+}
 
+html{
+    font-size: 20px;
+}
 
 
 
