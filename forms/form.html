@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registro</h2>
+        <hr>
+        <form id="formulario">
+            <div>
+                <div class="form-group">
+                    <label class="form-control" for="nombres">Nombres: </label>
+                    <input class="form-control" name="nombres" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control" for="ape">Apellidos: </label>
+                    <input class="form-control" name="ape" type="text">
+                </div>
+
+                <div class="form-group">
+                    <h3>Sexo:</h3>
+                    <label for="sexo">Masculino</label>
+                    <input name="sexo" type="radio">
+                    <label for="sexo">Femenino</label>
+                    <input name="sexo" type="radio">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control" for="email">Correo Electronico: </label>
+                    <input class="form-control" name="email" type="email">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control" for="pass">Contraseña: </label>
+                    <input class="form-control" name="pass" type="password">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control" for="edad">Edad: </label>
+                    <input style="width: 50px;" min="1" max="150" class="form-control" name="edad" type="number">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control" for="tel">Telefono: </label>
+                    <input class="form-control" name="tel" type="tel">
+                </div>
+            </div>
+            <div>
+                <div class="form-group">
+                    <label class="form-control" for="cumple">Cumpleaños: </label>
+                    <input class="form-control" name="cumple" type="date">
+                </div>
+                <div class="form-group">
+                    <h3>Preferencias Musicales</h3>
+                    <label for="musica">Rock</label>
+                    <input name="musica" type="checkbox">
+                    <label for="musica">Metal</label>
+                    <input name="musica" type="checkbox">
+                    <label for="musica">Cumbia</label>
+                    <input name="musica" type="checkbox">
+                    <label for="musica">Regueton</label>
+                    <input name="musica" type="checkbox">
+                </div>
+                <div class="form-group">
+                    <label class="form-control" for="dir">Direccion: </label>
+                    <input class="form-control" name="dir" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label for="comuna">Comuna:</label>
+                    <select class="form-control" name="comuna" id="">
+                        <option value="">Curico</option>
+                        <option value="">Teno</option>
+                        <option value="">Romeral</option>
+                        <option value="">Santa Cruz</option>
+                    </select>
+                </div>
+
+            </div>
+            <div>
+                Tercera parte del Form
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
