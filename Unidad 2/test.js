@@ -32,5 +32,10 @@ for (let index = 0; index < people.length; index++) {
         if(gustoMusical == "Reggae"){
             console.log(p.Name + " le gusta el Reggae")
         }
-    }-
+    }
 }
+
+//foreach
+
+items.forEach(unaFuncion);
+items.forEach(obj => console.log(obj));
