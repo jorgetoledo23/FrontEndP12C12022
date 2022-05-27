@@ -2,7 +2,6 @@ let nombre = "Joe"
 console.log(string.length);
 
 
-
 const nombres = "";
 if (nombres.length > 0){
     console.log("Nombre Valido!")
@@ -11,9 +10,15 @@ if (nombres.length > 0){
 //substring(start, end)
 //substr(start, length)
 let string2 = "lorem ipsum lorem ipsun.";
+
 let resultado = string2.slice(6,10);
+
+
 console.log(resultado);//ipsu
 let resultado2 = string2.slice(-10,-6);
+
+
+
 console.log(resultado2); // rem 
 
 //Extraer las ultimas 3 letras de un String
@@ -27,17 +32,40 @@ let texto = "C:/ProgramFiles/nodejs/node.exe"
 let resultado4 = texto.substring(0,1);
 console.log("Test Substring:" + resultado4) //C
 
+
+
+
 //substr
 let texto2 = "C:/ProgramFiles/nodejs/node.exe"
 let resultado5 = texto.substr(7,6);
 console.log("Test Substr:" + resultado5) //
 
+//Estraer las 3 ultimas letras de un String
+const largo = texto2.length
+const inicio = largo - 3 //20 inicio = 17
+
+const resultadoProblema = texto2.substr(inicio, 3)
+
+//Estraer las 3 primeras letras de un string
+const resultadoProblema2 = texto2.substr(0, 3)
+
+
+
+
+
+
+
+
+
+
+
 //replace 
 let texto3 = "C:/ProgramFiles/nodejs/node.exe"
-//let resultado6 = texto3.replace("NODE","NODE")
+//let resultado6 = texto3.replace("node","NODE")
 //let resultado6 = texto3.replace(/NODE/i,"NODE")//Expresion Regular
 let resultado6 = texto3.replace(/node/g,"javascript")//Expresion Regular
 console.log("Test Replace: " + resultado6)
+
 
 //toUpperCase toLowerCase
 let texto4 = "C:/ProgramFiles/nodejs/node.exe"
@@ -63,13 +91,16 @@ console.log(palabras[0])
 
 let texto6 = "C:/ProgramFiles/nodejs/node.exe"
 let array = texto6.split("/")
+
 console.log(array) // ['C:', 'ProgramFiles', 'nodejs', 'node.exe']
 
 
 /* Crear una funcion que reciba un string y lo retorne formateado 
-con su primera letra en mayuscula de cada plabra del string 
+con su primera letra en mayuscula de cada palabra del string 
 Ejemplo: el auto de alexis => El Auto De Alexis 
 */
+
+
 function FixString(string){
     if(!string.length > 0){ console.log("Error!")}
     else{
