@@ -51,17 +51,73 @@ for (let index = 0; index < lenguajes.length; index++) {
     const div = document.createElement("div");
     div.className = "card"
     div.classList.add("text-center")
-    div.style.height = "300px"
+   // div.style.height = "300px"
 
-    const h3 = document.createElement("h3");
-    h3.innerHTML = element.Name
+    const name = document.createElement("h3");
+    name.innerHTML = element.Name
+    name.classList.add("mt-2")
 
-    const p = document.createElement("p")
-    p.innerHTML = element.Abreviacion
-    p.className = "fst-italic"
+    const desc = document.createElement("p")
+    desc.innerHTML = element.Abreviacion
+    desc.className = "fst-italic"
 
-    div.appendChild(h3)
-    div.appendChild(p)
+    const tipo = document.createElement("p")
+    tipo.innerHTML = "Tipo: " + element.Tipo
+    tipo.className = "fst-italic"
+
+    const diff = document.createElement("h4");
+    diff.innerHTML = "Dificultad: " + element.Dificultad
+
+    const list = document.createElement("ul");
+    list.className = "list-group"
+
+    element.Utilidad.forEach(e => {
+        const item = document.createElement("li");
+        item.className = "list-group-item"
+        item.innerHTML = e
+        list.appendChild(item)
+    });
+
+    const btn = document.createElement("button");
+    btn.className = "btn"
+    btn.classList.add("btn-outline-success")
+    btn.classList.add("m-2")
+    btn.innerHTML = "Test"
+
+    btn.addEventListener("click",function(){
+        alert("Se produjo el Event Click")
+    })
+
+    div.addEventListener("mouseenter", function(){
+        div.classList.add("shadow")
+        div.style.backgroundColor = "lightblue"
+     })
+
+    div.addEventListener("mouseleave",function(){
+        div.classList.remove("shadow")
+        div.style.backgroundColor = "white"
+    })
+
+
+    btnBorrar = document.createElement("button")
+    btnBorrar.className = "btn"
+    btnBorrar.classList.add("btn-danger")
+    btnBorrar.classList.add("m-2")
+    btnBorrar.innerHTML = "Borrar"
+
+    btnBorrar.addEventListener("click", function(e){
+        root.removeChild(div)
+        console.log(e.target)
+    })
+
+
+    div.appendChild(name)
+    div.appendChild(desc)
+    div.appendChild(tipo)
+    div.appendChild(diff)
+    div.appendChild(list)
+    div.appendChild(btn)
+    div.appendChild(btnBorrar)
 
     root.appendChild(div)
 }
