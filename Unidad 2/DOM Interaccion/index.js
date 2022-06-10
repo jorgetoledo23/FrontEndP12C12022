@@ -105,6 +105,10 @@ for (let index = 0; index < lenguajes.length; index++) {
     btnBorrar.classList.add("m-2")
     btnBorrar.innerHTML = "Borrar"
 
+
+    //$100
+    //parseInt(btnBorrar.innerHTML) + 1
+
     btnBorrar.addEventListener("click", function(e){
         root.removeChild(div)
         console.log(e.target)
