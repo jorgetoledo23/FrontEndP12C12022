@@ -21,7 +21,7 @@ export default function CarroItem({ Item }){
             </div>
             <div className="col-8">
                 <p><strong>{Item.Producto.Descripcion}</strong></p>
-                <p>Preco Unitario: <strong>{CLFormat.format(Item.Producto.Precio)}</strong> </p>
+                <p>Precio Unitario: <strong>{CLFormat.format(Item.Producto.Precio)}</strong> </p>
                 <p>Cantidad: <strong>{Item.Cantidad}</strong></p>
                 <p>SubTotal: <strong>{CLFormat.format(Item.SubTotal)}</strong> </p>
             </div>
