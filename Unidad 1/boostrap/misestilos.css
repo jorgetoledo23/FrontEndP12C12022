@@ -1,0 +1,29 @@
+.bg-gradiente{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(7,61,156,1) 47%, rgba(0,212,255,1) 100%); 
+}
+
+.bg-animado {
+    background: linear-gradient(309deg, #1cd6cd, #4fd61c, #209274);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}

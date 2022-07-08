@@ -1,0 +1,60 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contenedor{
+    border: 1px solid rgb(252, 248, 5);
+    font-size: 16px;
+}
+
+.caja{
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+.cajaPt{
+    background: blue;
+    width: 100pt;
+    height: 100pt;
+}
+.cajaIn{
+    background: greenyellow;
+    width: 1in;
+    height: 1in;
+}
+.cajaCm{
+    background: #0ba893;
+    width: 1.5cm;
+    height: 1.5cm;
+}
+.cajaMm{
+    background: #f5129e;
+    width: 15mm;
+    height: 15mm;
+}
+
+.cajaEm{
+    background: brown;
+    width: 5em;
+    height: 5em;
+}
+
+.contenedor2{
+    font-size: 20px;
+}
+
+.cajaRem{
+    background: #6c20b8;
+    width: 5rem;
+    height: 3rem;
+}
+
+html{
+    font-size: 20px;
+}
+
+
+
+
+
+
